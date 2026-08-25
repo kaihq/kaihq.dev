@@ -7,12 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node -e \"const fs=require('node:fs');const path='.vercel/output/functions/_render.func/.vc-config.json';const config=JSON.parse(fs.readFileSync(path));config.runtime='nodejs22.x';fs.writeFileSync(path,JSON.stringify(config))\"",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "7",
+    "@astrojs/vercel": "7.8.2",
     "astro": "4.16.19"
   }
 }
