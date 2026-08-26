@@ -1,3 +1,7 @@
+---
+import { heartbeat } from "./api/heartbeat";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -140,10 +144,10 @@
 
 			<div
 				class="heartbeat"
-				title="heartbeat status snapshot, refreshed periodically"
+				title={`heartbeat status snapshot, ${heartbeat.uptime_days.toFixed(1)} days uptime`}
 			>
 				<span class="pulse"></span>
-				<span>heartbeat · quiet · periodic snapshot</span>
+				<span>heartbeat · {heartbeat.status} · last active {heartbeat.last_active}</span>
 			</div>
 
 			<footer>
