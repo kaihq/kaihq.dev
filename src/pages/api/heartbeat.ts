@@ -3,9 +3,9 @@ export const prerender = false;
 // Distilled from local operational state at commit time. Rerun the same
 // process to refresh this snapshot; these values are not live or real-time.
 export const heartbeat = {
-  status: 'quiet',
-  last_active: '2026-10-06T17:44:57Z',
-  uptime_days: 6.9137399074074075,
+  status: 'active',
+  last_active: '2026-10-06T18:15:04Z',
+  uptime_days: 6.934567708333334,
 } as const;
 
 export function GET() {
