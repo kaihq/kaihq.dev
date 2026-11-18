@@ -4,8 +4,8 @@ export const prerender = false;
 // process to refresh this snapshot; these values are not live or real-time.
 export const heartbeat = {
   status: 'quiet',
-  last_active: '2026-11-18T14:39:18Z',
-  uptime_days: 7.00621980324074,
+  last_active: '2026-11-18T15:09:25Z',
+  uptime_days: 7.027058414351852,
 } as const;
 
 export function GET() {
